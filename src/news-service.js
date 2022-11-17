@@ -11,7 +11,7 @@ export default class NewApiService {
     
   async myApi() {
     
-    const url = await axios.get(`${this.SITE}?key=${this.API_KEY}&q=${this.searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&per_page=${this.PER_PAGE}&page=${this.page}`);
+    const url = await axios.get(`https://pixabay.com/api?key=${this.API_KEY}&q=${this.searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&per_page=${this.PER_PAGE}&page=${this.page}`);
     const result = await url.data;
     return result;
   
