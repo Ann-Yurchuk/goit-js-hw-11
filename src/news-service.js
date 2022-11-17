@@ -11,7 +11,7 @@ export default class NewApiService {
     
   async myApi() {
     
-    const url = await axios.get(`${this.SITE}?key=${this.API_KEY}&q=${this.searchQuery}&lang=en&image_type=photo&orientation=horizontal&safesearch=true&per_page=${this.PER_PAGE}&page=${this.page}`);
+    const url = await axios.get(`${this.SITE}?key=${this.API_KEY}&q=${this.searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&per_page=${this.PER_PAGE}&page=${this.page}`);
     const result = await url.data;
     return result;
   
@@ -30,7 +30,7 @@ export default class NewApiService {
 }
 
   set query(newQuery) {
-    
+
     this.searchQuery = newQuery;
 }
 }
