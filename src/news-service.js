@@ -11,9 +11,10 @@ export default class NewApiService {
     
   async myApi() {
     
-    const url = await axios.get(`${this.SITE}?key=${this.API_KEY}&q=${this.searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&per_page=${this.PER_PAGE}&page=${this.page}`);
-    const result = await url.data;
-    return result;
+    const url = await axios.get(`https://pixabay.com/api/?key=31258232-e3c8f840f0c2c0981cedb6e2e&q=${this.searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${this.page}`
+);
+    // const result = await url.data;
+    return url.data;
   
       }
   
