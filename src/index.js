@@ -6,8 +6,6 @@ import LoadMoreBTN from "./components/load-more-btn";
 import cards from "./templates/cards.hbs";
 
 
-
-
 const refs = {
   searchForm: document.querySelector('.search-form'),
   button: document.querySelector('button'),
