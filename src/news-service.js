@@ -30,6 +30,7 @@ export default class NewApiService {
 }
 
   set query(newQuery) {
+    
     this.searchQuery = newQuery;
 }
 }
