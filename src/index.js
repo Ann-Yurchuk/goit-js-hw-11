@@ -4,6 +4,7 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 import NewApiService from './news-service';
 import LoadMoreBTN from "./components/load-more-btn";
 import cards from "./templates/cards.hbs";
+import axios from "axios";
 
 
 
