@@ -17,7 +17,6 @@ export default class NewApiService {
   
       }
   
-
   incrimentPage() {
     this.page += 1;
   }

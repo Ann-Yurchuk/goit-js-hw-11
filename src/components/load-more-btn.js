@@ -1,4 +1,4 @@
-export default class LoadMoreBTN{
+export default class LoadMoreBTN {
     constructor({ selector, hidden = false }) {
         this.refs = this.getRefs(selector);
         hidden && this.hide();
