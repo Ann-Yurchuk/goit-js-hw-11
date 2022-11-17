@@ -52,19 +52,15 @@ function fetchHits() {
     if (hits < 1) {
       Notiflix.Notify.warning('Sorry, there are no images matching your search query. Please try again.');
       return loadMoreBtn.hide();
-      
     }
      Notiflix.Notify.success(`Hooray! We found ${totalHits} images.`);
-   createResultMarkup(hits);
+    createResultMarkup(hits);
     new SimpleLightbox('.gallery a');
      if (totalPages < 1) {
        Notiflix.Notify.warning('Sorry, there are no images matching your search query. Please try again.');
         clearArticleContainer();
 
     }
-  if (this.page == 1) {
-    Notiflix.Notify.success(`Hooray! We found ${result.totalHits} images.`);
-  }
       newApiService.incrimentPage();
       if (totalPages > totalHits) {
      
