@@ -49,7 +49,7 @@ function fetchHits() {
        clearArticleContainer();
       return loadMoreBtn.hide();
   }
-    totalShowed = totalHits;
+    totalPages = totalHits;
     if (hits < 1) {
       Notiflix.Notify.warning('Sorry, there are no images matching your search query. Please try again.');
       return loadMoreBtn.hide();
@@ -58,7 +58,7 @@ function fetchHits() {
      Notiflix.Notify.success(`Hooray! We found ${totalHits} images.`);
    createResultMarkup(hits);
     new SimpleLightbox('.gallery a');
-     if (totalShowed < 1) {
+     if (totalPages < 1) {
        Notiflix.Notify.warning('Sorry, there are no images matching your search query. Please try again.');
         clearArticleContainer();
 
