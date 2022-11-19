@@ -11,9 +11,7 @@ export default class NewApiService {
     
   async myApi() {
     
-    const url = await axios.get(`https://pixabay.com/api/?key=31258232-e3c8f840f0c2c0981cedb6e2e&q=${this.searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${this.page}`
-);
-    // const result = await url.data;
+    const url = await axios.get(`https://pixabay.com/api/?key=31258232-e3c8f840f0c2c0981cedb6e2e&q=${this.searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${this.page}`);
     return url.data;
   
       }
@@ -31,7 +29,6 @@ export default class NewApiService {
 }
 
   set query(newQuery) {
-
-    this.searchQuery = newQuery;
+  this.searchQuery = newQuery;
 }
 }

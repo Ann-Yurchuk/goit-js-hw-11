@@ -100,12 +100,14 @@ a {
   border-bottom-right-radius: 8px;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 
-  gap: 20px;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    gap: 20px;
+  
 
   &__item {
     display: inline-block;
