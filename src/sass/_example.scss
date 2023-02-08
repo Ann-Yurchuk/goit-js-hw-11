@@ -6,8 +6,6 @@
   color: #2f2f37;
   max-width: 960px;
   padding: 16px;
-  
-
 }
 
 .example code {
@@ -29,7 +27,7 @@
   background-position: center;
 }
 
-.search-form{
+.search-form {
   display: inline;
 }
 
@@ -55,7 +53,7 @@ a {
   width: 100%;
   top: 0;
   left: 0;
-
+  box-shadow: 0px 7px 16px -3px rgba(0, 0, 0, 0.5);
   padding: 15px 0;
   background-color: rgb(93, 21, 100);
 
@@ -102,25 +100,22 @@ a {
   border-bottom-right-radius: 8px;
 }
 
-
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-around;
-    gap: 20px;
-  
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  gap: 20px;
 
   &__item {
     display: inline-block;
-      max-width: 100%;
-      object-fit: contain;
-      justify-content: space-between;
+    max-width: 100%;
+    object-fit: contain;
+    justify-content: space-between;
     box-shadow: 2px 2px 4px black;
 
-    transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     z-index: 9;
-
   }
 }
 
@@ -133,4 +128,3 @@ a {
   text-align: center;
   font-size: 10px;
 }
-

@@ -1,32 +1,31 @@
 export default class LoadMoreBTN {
-    constructor({ selector, hidden = false }) {
-        this.refs = this.getRefs(selector);
-        hidden && this.hide();
-    }
+  constructor({ selector, hidden = false }) {
+    this.refs = this.getRefs(selector);
+    hidden && this.hide();
+  }
 
-    getRefs(selector) {
-        const refs = {};
-        refs.button = document.querySelector(selector);
-        refs.label = refs.button.querySelector('.label');
-        return refs;
-}
+  getRefs(selector) {
+    const refs = {};
+    refs.button = document.querySelector(selector);
+    refs.label = refs.button.querySelector('.label');
+    return refs;
+  }
 
-    enable() {
-        this.refs.button.disabled = false;
-        this.refs.label.textContent = 'Load more';
-}
-    
-    disable() {
-       this.refs.button.disabled = true;
-        this.refs.label.textContent = 'Loading...';
-    }
+  enable() {
+    this.refs.button.disabled = false;
+    this.refs.label.textContent = 'Load more';
+  }
 
-    show() {
-   this.refs.button.classList.remove('is-hidden');  
-}
+  disable() {
+    this.refs.button.disabled = true;
+    this.refs.label.textContent = 'Loading...';
+  }
 
-    hide() {
-        this.refs.button.classList.add('is-hidden'); 
-   }
-    
+  show() {
+    this.refs.button.classList.remove('is-hidden');
+  }
+
+  hide() {
+    this.refs.button.classList.add('is-hidden');
+  }
 }
